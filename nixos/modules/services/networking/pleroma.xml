@@ -127,6 +127,6 @@ migration. </para>
 </programlisting></para>
    <para>In regard of the pleroma service configuration you also just generated, you'll need to split it in two parts. The "public" part, which do not contain any secrets and thus can be safely stored in the Nix store and its "private" counterpart containing some secrets (database password, endpoint secret key, salts, etc.).</para>
 
-   <para>The public part will live in your NixOS machine configuration in the <link linkend="opt-services.pleroma.configs">services.pleroma.configs</link> option. However, it's up to you to upload the secret pleroma configuration to the path pointed by <link linkend="opt-services.pleroma.secretConfigFile">services.pleroma.secretConfigFile</link>. You can do that manually or rely on a third party tool such as <link xlink:href="https://github.com/DBCDK/morph">Morph</link> or <link xlink:href="https://github.com/NixOS/nixops">NixOps</link>.</para>
+   <para>The public part will live in your NixOS machine configuration in the services.pleroma.configs option. However, it's up to you to upload the secret pleroma configuration to the path pointed by services.pleroma.secretConfigFile. You can do that manually or rely on a third party tool such as <link xlink:href="https://github.com/DBCDK/morph">Morph</link> or <link xlink:href="https://github.com/NixOS/nixops">NixOps</link>.</para>
  </section>
 </chapter>
