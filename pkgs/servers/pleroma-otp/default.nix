@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     };
     x86_64-linux = fetchurl {
       url = "https://git.pleroma.social/pleroma/pleroma/-/jobs/175284/artifacts/download";
-      sha256 = "0z93qvyda5kh794svk00pgbzhm5pv663rjkzkwwb6sfk7f9287ir";
+      sha256 = "1c6l04gga9iigm249ywwcrjg6wzy8iiid652mws3j9dnl71w2sim";
     };
   }."${stdenv.hostPlatform.system}";
 
